@@ -1,4 +1,15 @@
 import random
+print(''' _                                             
+| |                                            
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    __/ |                      
+                   |___/         ''')
+
+print("Welcome to Hangman Game")
+
 stages = ['''
     _______
      |/      |
@@ -202,11 +213,11 @@ while game_over != True:
     lives -= 1
     if lives == 0:
       game_over = True
-      print("you lose !")
+      print("**********you lose !**********")
 
 
   if "_" not in display:
     game_over = True
-    print("you win")
+    print("**********you win !**********")
 
   print(stages[lives])
